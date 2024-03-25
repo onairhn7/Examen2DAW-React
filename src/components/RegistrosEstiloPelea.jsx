@@ -55,7 +55,7 @@ const RegistrosEstiloPelea = () => {
       </table>
       {/* Botón de navegación */}
       <div className="d-flex justify-content-end">
-        <Link to="/estilo" className="btn btn-secondary mr-2">Atrás</Link>
+        <Link to="/bando" className="btn btn-secondary mr-2">Atrás</Link>
         <Link to="/registro-samurai">
           <button className="btn btn-primary">Registrar Samurai</button>
         </Link>

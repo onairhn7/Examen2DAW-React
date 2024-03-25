@@ -52,7 +52,7 @@ const RegistrosCreados = () => {
       </table>
       {/* Botones de navegación */}
       <div className="d-flex justify-content-between">
-        <Link to="/sexo">
+        <Link to="/">
           <button className="btn btn-secondary">Atrás</button>
         </Link>
         <Link to="/bando">
