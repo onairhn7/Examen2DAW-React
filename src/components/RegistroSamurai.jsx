@@ -38,6 +38,7 @@ export const RegistroSamurai = () => {
 
       return (
         <form className="formulario" onSubmit={handleSubmit}>
+            <h1>Registrar Samurai</h1>
           <label>
             Nombre:
             <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} />
