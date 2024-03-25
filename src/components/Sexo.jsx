@@ -16,7 +16,8 @@ const Sexo = () => {
     try {
       const response = await axios.post('http://localhost:4000/api/sexo', formData);
       console.log('Registro creado:', response.data);
-      // Puedes añadir código para mostrar un mensaje de éxito o redirigir a otra página.
+      // Limpia el campo de sexo después de enviar el formulario
+      setFormData({ ...formData, sexo: '' });
     } catch (error) {
       console.error('Error al crear el registro:', error);
       // Puedes añadir código para mostrar un mensaje de error al usuario.
@@ -35,13 +36,14 @@ const Sexo = () => {
       </form>
       {/* Agrega el botón de "Registros Creados" con un enlace a la ruta correspondiente */}
       <Link to="/registros-creados">
-  <button className="registros-creados-btn">Registros Creados</button>
-</Link>
+        <button className="registros-creados-btn">Registros Creados</button>
+      </Link>
     </div>
   );
 };
 
 export default Sexo;
+
 
 
 
