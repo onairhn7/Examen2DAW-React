@@ -8,6 +8,7 @@ import  Sexo  from './components/Sexo';
 import RegistrosCreados from './components/RegistrosCreados';
 import BandosRegistrados from './components/BandosRegistrados';
 import RegistrosEstiloPelea from './components/RegistrosEstiloPelea';
+import SamuraisCreados from './components/SamuraisCreados';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/registro-samurai" element={<RegistroSamurai />} />
       <Route path="/estilo-pelea" element={<EstiloPelea />} />
       <Route path="/registrosestilopelea" element={<RegistrosEstiloPelea />} />
+      <Route path="/samurais-registrados" element={<SamuraisCreados />} />
       
       
         
