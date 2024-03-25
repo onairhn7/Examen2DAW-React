@@ -36,9 +36,9 @@ const Bando = () => {
 
         <button type="submit">Crear Bando</button>
       </form>
-      {/* Botón para mostrar registros de bandos */}
+      
       <Link to="/bandos-registrados">
-        <button className="btn btn-primary mt-3">Mostrar Registros</button>
+        <button className="btn btn-primary mt-3">Mostrar Registros de bando</button>
       </Link>
     </div>
   );

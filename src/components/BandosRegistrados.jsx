@@ -18,6 +18,16 @@ const BandosRegistrados = () => {
     fetchBandos();
   }, []);
 
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:4000/api/bando/${id}`);
+      setBandos(bandos.filter(bando => bando.id !== id));
+      console.log('Registro eliminado');
+    } catch (error) {
+      console.error('Error al eliminar el registro:', error);
+    }
+  };
+
   return (
     <div className="container mt-4">
       <h2>Registros de Bandos</h2>
@@ -26,6 +36,7 @@ const BandosRegistrados = () => {
           <tr>
             <th>ID</th>
             <th>Nombre</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -33,14 +44,20 @@ const BandosRegistrados = () => {
             <tr key={bando.id}>
               <td>{bando.id}</td>
               <td>{bando.nombre}</td>
+              <td>
+                <button className="btn btn-danger" onClick={() => handleDelete(bando.id)}>Eliminar</button>
+              </td>
             </tr>
           ))}
         </tbody>
       </table>
-      {/* Botón de navegación */}
+      {/* Botones de navegación */}
       <div className="d-flex justify-content-end">
         <Link to="/bando">
           <button className="btn btn-secondary">Atrás</button>
+        </Link>
+        <Link to="/estilo-pelea">
+          <button className="btn btn-primary ml-2">Elegir Estilo de pelea</button>
         </Link>
       </div>
     </div>
@@ -48,3 +65,4 @@ const BandosRegistrados = () => {
 };
 
 export default BandosRegistrados;
+

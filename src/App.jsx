@@ -7,6 +7,7 @@ import EstiloPelea  from './components/EstiloPelea';
 import  Sexo  from './components/Sexo';
 import RegistrosCreados from './components/RegistrosCreados';
 import BandosRegistrados from './components/BandosRegistrados';
+import RegistrosEstiloPelea from './components/RegistrosEstiloPelea';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       <Route path="/bandos-registrados" element={<BandosRegistrados />} />
       <Route path="/registro-samurai" element={<RegistroSamurai />} />
       <Route path="/estilo-pelea" element={<EstiloPelea />} />
+      <Route path="/registrosestilopelea" element={<RegistrosEstiloPelea />} />
+      
+      
         
       </Routes>
     </BrowserRouter>
