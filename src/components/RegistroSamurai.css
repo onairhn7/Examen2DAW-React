@@ -1,0 +1,55 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .formulario label {
+    margin-bottom: 10px;
+  }
+  
+  .formulario input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .formulario button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .formulario button:hover {
+    background-color: #0056b3;
+  }
+
+
+  .formulario h1 {
+
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+  }
+
+  .registros-creados-btn {
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+  }
+  
+  .registros-creados-btn:hover {
+    background-color: #0056b3; 
+  }
+
+ 
